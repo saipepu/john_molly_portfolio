@@ -1,0 +1,49 @@
+.about_me_page{
+    position: relative;
+    width: 80vw;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.about_me_title{
+    z-index: 1;
+    position: absolute;
+    font-family: 'Cinzel';
+    font-size: 3em;
+}
+.about_me_body{
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_me_img_container{
+    position: relative;
+    margin: 1em;
+}
+.about_me_img{
+    width: 30vw;
+}
+.about_me_sub_title{
+    width: 30vw;
+    font-family: 'Work Sans';
+    font-size: 2vw;
+    line-height: 5vw;
+}
+@media only screen and (max-width: 500px) {
+    .about_me_sub_title{
+        width: 80vw;
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .about_me_body{
+        height: 60vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
