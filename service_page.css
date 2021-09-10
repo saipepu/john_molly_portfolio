@@ -1,0 +1,58 @@
+.service_page{
+    position: relative;
+    width: 80vw;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service_big_title{
+    position: relative;
+    font-size: 4vw;
+    font-family: 'Cinzel';
+    margin-bottom: 0.5em;
+}
+.service_body{
+    width: 70vw;
+    display: flex;
+}
+.service_col_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col_1_title{
+    position: relative;
+    font-family: 'Rochester';
+    font-size: 4vw;
+    height: 20vh;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.col_1_img{
+    margin: 0.5em;
+    width: 25vw;
+    height: auto;
+}
+.service_col_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col_2_title{
+    position: relative;
+    font-family: 'Rochester';
+    font-size: 4vw;
+    height: 20vh;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.col_2_img{
+    margin: 0.5em;
+    width: 25vw;
+    height: auto;
+}
