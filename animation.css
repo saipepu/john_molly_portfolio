@@ -1,0 +1,5 @@
+.horizontal_animation{
+    transition: transform 1s ease-in;
+    transform: translateX(0);
+    opacity: 1;
+}

@@ -1,0 +1,104 @@
+.recent_work_page{
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recent_left{
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: fit-content;
+}
+.left_up,.left_down{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.recent_big_title{
+    position: relative;
+    font-family: 'Cinzel';
+    font-size: 6vw;
+    text-align: center;
+    top: 10%;
+    margin: auto;
+}
+.recent_sub_title{
+    position: relative;
+    font-family: 'Work Sans';
+    font-size: 1.5vw;
+    text-align: left;
+    line-height: 1.5em;
+    margin: auto;
+}
+.recent_work_img_3_container{
+    transform-origin: right;
+    position: relative;
+    overflow: hidden;
+}
+.recent_work_img_1,.recent_work_img_2{
+    display: block;
+    width: 20vw;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+.recent_work_img_3{
+    display: block;
+    transform-origin: right;
+    position: relative;
+    height: auto;
+    width: 40vw;
+}
+.recent_work_page_button{
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    margin: 1em;
+    background-color: rgba(250, 235, 215, 0.148);
+    text-align: center;
+    padding: 0.5em;
+    border: 0.5px solid rgb(0, 0, 0);
+}
+.button_arrow{
+    margin-right: 0.5em;
+}
+.recent_work_page_button:hover.recent_work_page_button{
+    color: white;
+    background-color: rgba(49, 48, 47, 0.73);
+    box-shadow: 0px 0px 5px 5px rgba(168, 166, 166, 0.315);
+}
+@media only screen and (max-width: 500px) {
+    .recent_work_page{
+        flex-wrap: wrap;
+    }
+    .recent_left{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left_up,.left_down{
+        flex-wrap: wrap;
+    }
+    .recent-work_img_3_container{
+        width: 40vw;
+        height: 40vh;
+    }
+    .recent_big_title{
+        font-size: 10vw;
+    }
+    .recent_sub_title{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .recent_work_img_1,.recent_work_img_2{
+        width: 40vw;
+        height: auto;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+}

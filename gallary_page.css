@@ -1,0 +1,149 @@
+.gallary_page{
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+.gallary_title_container{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 30%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.gallary_big_title{
+    font-family: 'Cinzel';
+    font-size: 6vw;
+    transform: translateY(50%);
+    opacity: 0;
+}
+.gallary_sub_title{
+    font-family: 'Work Sans';
+    font-size: 1.5vw;
+    transform: translateY(50%);
+    opacity: 0;
+}
+.gallary_img_container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.gallary_1,.gallary_2,.gallary_3{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.gallary_1{
+    align-self: flex-start;
+}
+.gallary_2{
+    align-self: center;
+}
+.gallary_3{
+    align-self: flex-end;
+}
+.gallary_container{
+    position: relative;
+    overflow: hidden;
+    margin: 1em;
+}
+.overlay_1{
+    position: absolute;
+    background-color: rgba(60, 60, 64, 0.483);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
+    .gallary_page{
+        padding-top: 1em;
+    }
+    .gallary_title_container{
+        padding: 0;
+        text-align: center;
+    }
+    .gallary_big_title,.gallary_sub_title{
+        padding: 0;
+    }
+    .gallary_big_title{
+        font-size: 10vw;
+    }
+    .gallary_sub_title{
+        font-size: 0.8em;
+    }
+    .gallary_title_container{
+        text-align: center;
+    }
+    .view_more{
+        font-size: 6vw;
+    }
+}
+.view_more{
+    cursor: pointer;
+    color: white;
+    white-space:nowrap;
+    position: relative;
+    border: 1px solid white;
+    padding: 0.2em;
+    opacity: 0;
+    font-size: 2.8vw;
+    width: max-content;
+    transition: all 0.5s ease-in;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    position: relative;
+    transition: all 0.5s ease-in;
+    transform: translateX(-20%);
+    opacity: 0;
+}
+.gallary:hover .overlay_1{
+    width: 100%;
+}
+.gallary:hover .view_more{
+    opacity: 0.5;
+}
+.view_more:hover .arrow{
+    transform: translateX(0);
+    opacity: 1;
+}
+.view_more:hover.view_more{
+    transition: 0.1s ease-in;
+    opacity: 1;
+}
+.gallary_page_button{
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    margin: 1em;
+    background-color: rgba(250, 235, 215, 0.148);
+    text-align: center;
+    padding: 0.5em;
+    border: 0.5px solid rgb(0, 0, 0);
+}
+.button_arrow{
+    margin-right: 0.5em;
+}
+.gallary_page_button:hover.gallary_page_button{
+    color: white;
+    background-color: rgba(49, 48, 47, 0.73);
+    box-shadow: 0px 0px 5px 5px rgba(168, 166, 166, 0.315);
+}

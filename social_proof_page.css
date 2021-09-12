@@ -1,0 +1,33 @@
+.social_proof_page{
+    padding-top: 1em;
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    background-color: rgb(236, 188, 125);
+}
+.icon_container{
+    width: 30vw;
+    height: 10vh;
+}
+.social_proof_cw{
+    width: 50vw;
+    height: 10vh;
+    text-align: right;
+}
+.social_proof_title{
+    font-family: 'Work Sans';
+    font-size: 1.5vw;
+    margin-bottom: 1em;
+}
+.social_proof_email{
+    font-family: 'Work Sans';
+    font-size: 1.5vw;
+}
+.icon{
+    width: 1.5vh;
+    height: auto;
+    margin: 1vw;
+}
